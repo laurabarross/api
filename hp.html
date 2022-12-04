@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Ola</title>
+</head>
+<body>
+<select name="casas" id="cep">
+    <option value="0">Escolher Casa</option>
+    <option value="1">Grifinória</option>
+    <option value="2">Sonserina</option>
+    <option value="3">Lufa Lufa</option>
+    <option value="4">Corvinal</option>
+</select>
+    <input type="button" value="Enviar" id="enviar"><br>
+    <div id="mostra"></div>
+  
+  <script>
+    document.querySelector('#enviar').addEventListener('click',consulta);
+    let casa=""
+    
+    async function consulta(){
+        
+         casa = document.querySelector('#cep').value;
+        
+
+        const url='https://legacy--api.herokuapp.com/api/v1/houses/'+casa;
+        try{
+            let resposta=  await fetch(url);
+            let js = await resposta.json();
+            console.log(js)
+            mostraDados(js);
+        }catch {
+            console.log("erro")
+        }
+    }       
+    function mostraDados(js){
+        const painel = document.querySelector('#mostra');
+        let texto= "<h1>Dados solicitados</h1>";
+        texto=texto + "Nome"+ js.name+"<br>";
+        texto=texto + "Animal:"+ js.animal+"<br>";
+        texto=texto + "Fundador:" + js.founder+"<br>";
+        texto=texto + "características:" + js.traits;
+        
+        painel.innerHTML = texto;
+        if(casa=="1"){
+            document.body.bgColor="#df4617";
+        }
+        if(casa=="2"){
+            document.body.bgColor="#095510";
+        }
+        if(casa=="3"){
+            document.body.bgColor="yellow";
+        }
+        if(casa=="4"){
+            document.body.bgColor="#77caeb";
+        }
+    }
+    
+</script>
+</body>
+</html>
