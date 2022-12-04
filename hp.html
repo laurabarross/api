@@ -4,10 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Ola</title>
 </head>
 <body>
-<select name="casas" id="cep">
+<select name="casas" id="casas">
     <option value="0">Escolher Casa</option>
     <option value="1">Grifinória</option>
     <option value="2">Sonserina</option>
@@ -23,7 +24,7 @@
     
     async function consulta(){
         
-         casa = document.querySelector('#cep').value;
+         casa = document.querySelector('#casas').value;
         
 
         const url='https://legacy--api.herokuapp.com/api/v1/houses/'+casa;
@@ -46,7 +47,7 @@
         
         painel.innerHTML = texto;
         if(casa=="1"){
-            document.body.bgColor="#df4617";
+            document.body.Image=url("img/grifinoria.jpg");
         }
         if(casa=="2"){
             document.body.bgColor="#095510";
