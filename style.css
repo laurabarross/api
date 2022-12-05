@@ -2,3 +2,33 @@ body{
 text-align:center;
   background-image:url("img/fundo.png");
 }
+
+#enviar{
+    position: absolute;
+    top: 27vw;
+    left:73vw;
+    width: 15vw;
+    height: 8vw;
+    text-align: center;
+    background-size: cover;
+    font-size:larger;
+    font-family: 'potter' ;
+ }
+
+ #mostra{
+    color: white;
+ }
+
+#casas {
+    position: absolute;
+    top: 25vw;
+    left:38vw;
+    width: 20vw;
+    height: 10vw;
+    text-align: center;
+    background-size: cover;
+    border: 3px solid black;
+    font-size:larger;
+    font-family: 'potter' ;
+   
+   }
