@@ -6,7 +6,7 @@ body{
 
 #enviar{
     position: absolute;
-    left:38vw;
+    left:50vw;
     width: 15vw;
     height: 8vw;
     background-size: cover;
@@ -16,7 +16,6 @@ body{
  #mostra{
     color: white;
     top:25vw;
-    left:38vw;
  }
 
 #casas {
