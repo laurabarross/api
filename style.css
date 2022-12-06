@@ -16,7 +16,8 @@ body{
  #mostra{
     position:absolute;
     color: white;
-    top:25vw;
+    top:20vw;
+    left:30vw;
  }
 
 #casas {
