@@ -40,12 +40,12 @@
     function mostraDados(js){
         
         const painel = document.querySelector('#mostra');
-        let texto= "<h1>Dados solicitados</h1>";
-        texto=texto + "Nome: "+ js.name+"<br>";
+        let texto= "<h1>Dados sobre a casa:</h1>";
+        texto=texto + "<p>Nome: </p>"+ js.name+"<br>";
         texto=texto + "Cores: "+ js.colors+"<br>";
         texto=texto + "Animal: "+ js.animal+"<br>";
         texto=texto + "Fundador: " + js.founder+"<br>";
-        texto=texto + "características: " + js.traits;
+        texto=texto + "Características: " + js.traits;
         
         
         painel.innerHTML = texto;
