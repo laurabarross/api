@@ -38,7 +38,7 @@
         }
     }       
     function mostraDados(js){
-        body.removechild(casas);
+        
         const painel = document.querySelector('#mostra');
         let texto= "<h1>Dados solicitados</h1>";
         texto=texto + "Nome: "+ js.name+"<br>";
@@ -47,7 +47,7 @@
         texto=texto + "Fundador: " + js.founder+"<br>";
         texto=texto + "características: " + js.traits;
         
-        body.appendChild(casas);
+        
         painel.innerHTML = texto;
          if(casa=="1"){
             document.body.style.backgroundImage = "url('img/grifinoria.jpg')";
