@@ -6,6 +6,7 @@ body{
 
 #enviar{
     position: absolute;
+    left:38vw;
     width: 15vw;
     height: 8vw;
     background-size: cover;
@@ -20,6 +21,7 @@ body{
 
 #casas {
     position: absolute;
+    left:30vw;
     width: 20vw;
     height: 10vw;
     background-size: cover;
