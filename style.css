@@ -1,12 +1,11 @@
 body{
-  text-align: center;
   background-image:url("img/fundo.png");
   background-size: cover;
 }
 
 #enviar{
     position: absolute;
-    left:50vw;
+    left:70vw;
     width: 15vw;
     height: 8vw;
     background-size: cover;
@@ -16,13 +15,13 @@ body{
  #mostra{
     position:absolute;
     color: white;
-    top:20vw;
-    left:30vw;
+    width:40vw;
+    top:0vw;
  }
 
 #casas {
     position: absolute;
-    left:30vw;
+    left:45vw;
     width: 20vw;
     height: 10vw;
     background-size: cover;
